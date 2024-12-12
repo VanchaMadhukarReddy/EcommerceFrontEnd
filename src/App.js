@@ -10,14 +10,14 @@ import Footer from "./components/Footer/Footer";
 import men_banner from "./components/Asserts/banner_mens.png";
 import women_banner from "./components/Asserts/banner_women.png";
 import kids_banner from "./components/Asserts/banner_kids.png";
+
 function App() {
   return (
     <div>
-      <BrowserRouter>
+      <BrowserRouter basename="/EcommerceFrontEnd">
         <Navbar />
         <Routes>
           <Route path="/" element={<LoginSignup />} />
-          <Route path="/EcommerceFrontEnd" element={<LoginSignup />} />
           <Route path="/Shop" element={<Shop />} />
           <Route
             path="/Men"
